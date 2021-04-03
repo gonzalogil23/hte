@@ -1,0 +1,391 @@
+$titleFontSize: 2.5em;
+
+%redes {
+  max-height: 50px;
+  max-width: auto;
+  transition: all 0.3s ease;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(243, 247, 247);
+  color: rgb(61, 82, 77);
+  font-size: 20px;
+  font-family: "Roboto", sans-serif;
+}
+
+.header {
+  background-color: rgba(0, 0, 0, 0.705);
+}
+
+.Home {
+  text-align: center;
+  color: rgb(20, 20, 20);
+  background-image: url(../images/vegetables.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  height: 100vh;
+  z-index: -3;
+}
+
+h1 {
+  font-size: 16px;
+  letter-spacing: 2px;
+  font-weight: bold;
+  font-family: "Oswald", sans-serif;
+  position: absolute;
+  display: inline;
+  color: rgb(255, 255, 255);
+  padding: 4px;
+}
+
+.imagenLogo {
+  max-height: 600px;
+  max-width: auto;
+  position: relative;
+  top: 50px;
+  padding: 50px 20px;
+}
+
+.encabezado {
+  display: flex;
+  justify-content: flex-end;
+
+  a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 19px;
+    transition: all 0.2s ease-out;
+    padding: 10px 20px;
+    text-shadow: rgba(185, 185, 185, 0.233) 0 1px;
+    &:visited {
+      text-decoration: none;
+      color: rgb(255, 255, 255);
+    }
+    &:hover {
+      text-decoration: underline;
+      transform: scale(1.1);
+      color: rgb(174, 216, 216);
+      text-shadow: none;
+    }
+  }
+}
+
+.aboutUs {
+  font-size: $titleFontSize;
+  text-align: left;
+  text-shadow: rgb(33, 49, 49) 0 2px;
+  font-family: "Oswald", sans-serif;
+  padding: 20px;
+  letter-spacing: 2px;
+}
+
+.fotos {
+  display: flex;
+  justify-content: flex-end;
+
+  .fotoCostado {
+    max-height: 350px;
+    max-width: auto;
+    position: relative;
+    bottom: 380px;
+    border: solid 2px rgba(172, 155, 108, 0.87);
+    border-radius: 5px;
+  }
+
+  .fotoFrente {
+    max-height: 350px;
+    max-width: auto;
+    position: relative;
+    left: 130px;
+    bottom: 80px;
+    border: solid 2px rgba(172, 155, 108, 0.87);
+    border-radius: 5px;
+  }
+}
+
+.historia {
+  text-indent: 20px;
+  padding: 20px auto;
+  margin-left: 10px;
+  .parrafo-1,
+  .parrafo-2 {
+    text-align: left;
+    margin: 20px 50% 30px 30px;
+  }
+}
+
+.armadoEvento {
+  color: rgb(61, 82, 77);
+  padding: 30px;
+  margin-bottom: 30px;
+  .armado {
+    font-size: 2.5em;
+    text-align: center;
+    color: rgb(61, 82, 77);
+    text-shadow: rgb(33, 49, 49) 0 2px;
+    font-family: "Oswald", sans-serif;
+    padding: 40px;
+    letter-spacing: 2px;
+  }
+}
+
+.card {
+  border: 2px solid rgba(0, 0, 0, 0.125) !important;
+  border-radius: 3px;
+  margin: 20px auto;
+  height: 280px;
+  width: 200px;
+  box-shadow: 3px -3px 5px 0px #dfe5c0;
+  .card-img-top {
+    height: 80px;
+    padding: 10px 55px;
+  }
+}
+
+.servicios1 {
+  background-image: url(../images/catering.jpg);
+  height: 100vh;
+  width: auto;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  .tituloServicios {
+    font-size: 2.5em;
+    text-align: center;
+    font-family: "Oswald", sans-serif;
+    color: rgb(1, 5, 5);
+    text-shadow: rgb(243, 247, 247) 0 2px;
+    padding: 20px;
+    letter-spacing: 2px;
+  }
+  .events {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    color: rgb(3, 36, 36);
+    .eventos1 {
+      background-color: rgba(255, 255, 255, 0.75);
+      height: 300px;
+      width: 40%;
+      text-align: left;
+      margin-top: 6%;
+      padding: 2% 2%;
+      p {
+        line-height: 25px;
+      }
+      ul {
+        list-style: none;
+        line-height: 30px;
+        margin-top: 15px;
+      }
+      .eventosTitulo {
+        text-align: center;
+        font-weight: bold;
+        text-transform: uppercase;
+        text-shadow: rgb(61, 82, 77) 0 1px;
+        margin: 20px auto;
+      }
+    }
+  }
+}
+
+.enlaceCarta {
+  margin: 50px auto;
+  text-align: left;
+  font-weight: bold;
+  font-size: 22px;
+  color: rgb(3, 14, 14);
+  text-shadow: rgb(243, 247, 247) 0 1px;
+  background-color: rgba(255, 255, 255, 0.75);
+  display: inline;
+  display: flex;
+  justify-content: center;
+  width: 630px;
+  .accesoCarta {
+    font-weight: bold;
+    text-decoration: none;
+    color: rgb(26, 48, 48);
+    text-shadow: rgb(3, 14, 14) 0 1px;
+    transition: all 0.5s ease-out;
+    &:hover {
+      color: rgb(11, 22, 22);
+      transform: scale(1.2);
+    }
+  }
+}
+
+.contact {
+  padding: 40px 40px;
+  background-image: url(../images/bruschetta.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: auto;
+  width: auto;
+  letter-spacing: 2px;
+  .contacto1 {
+    font-size: $titleFontSize;
+    text-align: center;
+    font-family: "Oswald", sans-serif;
+    text-shadow: rgb(61, 82, 77) 0 2px;
+    margin-bottom: 20px;
+  }
+}
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  position: relative;
+  left: 780px;
+  button {
+    width: 60px;
+    height: 25px;
+    border: solid 1px rgb(172, 155, 108);
+    padding-bottom: 3px;
+    margin: 20px 0 !important;
+    &:hover {
+      background-color: rgb(243, 247, 247);
+      font-weight: bold;
+      color: rgb(3, 36, 36);
+      border: solid 2px rgb(129, 116, 81);
+    }
+  }
+  textarea {
+    resize: none;
+    width: 100%;
+    height: 150px;
+  }
+}
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  .footer1 {
+    list-style: none;
+    color: rgb(18, 27, 27);
+    text-decoration: none;
+    font-size: 14px;
+    text-align: center;
+    position: relative;
+    padding: 10px;
+    line-height: 20px;
+    transition: all 0.2s ease;
+    a {
+      &:link {
+        color: rgb(18, 27, 27);
+        text-decoration: none;
+      }
+      &:visited {
+        color: rgb(18, 27, 27);
+        text-decoration: none;
+      }
+      &:hover {
+        color: rgb(0, 85, 85);
+        font-weight: bold;
+      }
+    }
+  }
+  .imagenLogoFooter {
+    max-height: 100px;
+    max-width: auto;
+  }
+  .copyright {
+    color: rgb(18, 27, 27);
+    text-decoration: none;
+    font-size: 10px;
+    text-align: center;
+    letter-spacing: -1px;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.whatsapp {
+  max-height: 50px;
+  max-width: auto;
+  position: fixed;
+  right: 0;
+  bottom: 200px;
+  transition: all 0.3s ease-in-out;
+  &:hover {
+    transform: translateX(-20px);
+  }
+}
+
+.logoInstagram {
+  max-height: 50px;
+  max-width: auto;
+  transition: all 0.3s ease;
+  &:hover {
+    transform: translateY(-10px);
+  }
+}
+.logoFacebook {
+  max-height: 50px;
+  max-width: auto;
+  transition: all 0.3s ease;
+  &:hover {
+    transform: translateY(-10px);
+  }
+}
+
+.logoYoutube {
+  max-height: 50px;
+  max-width: auto;
+  margin: auto 20px;
+  transition: all 0.3s ease;
+  &:hover {
+    transform: translateY(-10px);
+  }
+}
+
+.textoCarta {
+  font-size: $titleFontSize;
+  text-align: center;
+  text-shadow: rgb(33, 49, 49) 0 2px;
+  font-family: "Oswald", sans-serif;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.carousel-inner {
+  position: relative;
+  left: 280px;
+  width: 800px !important;
+  h5 {
+    color: rgb(1, 5, 5);
+    text-shadow: rgba(215, 216, 216, 0.685) 0 .5px;
+  }
+  p {
+    color: rgba(0, 0, 0, 0.705);
+  }
+}
+
+.carousel-control-prev {
+  left: 200px !important;
+}
+.carousel-control-next {
+  right: 190px !important;
+}
+
+.fotosSaladas,
+.fotosDulces {
+  border: solid 2px black;
+  border-radius: 3px;
+  width: 100%;
+  height: 600px;
+}

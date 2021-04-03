@@ -1,0 +1,47 @@
+.footer1 {
+    list-style: none;
+    color: rgb(18, 27, 27);
+    text-decoration: none;
+    font-size: 14px;
+    text-align: center;
+    position: relative;
+    padding: 10px;
+    line-height: 20px;
+    transition: all 0.2s ease;
+  }
+  
+  .footer1 a:link {
+    color: rgb(18, 27, 27);
+    text-decoration: none;
+  }
+  .footer1 a:visited {
+    color: rgb(18, 27, 27);
+    text-decoration: none;
+  }
+  
+  .footer1 a:hover {
+    color: rgb(0, 85, 85);
+    font-weight: bold;
+  }
+  
+  .footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .imagenLogoFooter {
+    max-height: 100px;
+    max-width: auto;
+  }
+
+  .copyright {
+    color: rgb(18, 27, 27);
+    text-decoration: none;
+    font-size: 10px;
+    text-align: center;
+    letter-spacing: -1px;
+    display: flex;
+    justify-content: center;
+  }
+ 

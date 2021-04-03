@@ -1,0 +1,43 @@
+
+.aboutUs {
+    font-size: 2.5em;
+    text-align: left;
+    text-shadow: rgb(33, 49, 49) 0 2px;
+    font-family: "Oswald", sans-serif;
+    padding: 20px;
+    letter-spacing: 2px;
+  }
+  
+  .fotos {
+    display: flex;
+    justify-content: flex-end;
+
+    .fotoCostado {
+    max-height: 350px;
+    max-width: auto;
+    position: relative;
+    bottom: 380px;
+    border: solid 2px rgba(172, 155, 108, 0.87);
+    border-radius: 5px;
+    }
+     
+  .fotoFrente {
+    max-height: 350px;
+    max-width: auto;
+    position: relative;
+    left: 130px;
+    bottom: 80px;
+    border: solid 2px rgba(172, 155, 108, 0.87);
+    border-radius: 5px;
+  }
+  }
+  
+  .historia {
+    text-indent: 20px;
+    padding: 20px auto;
+    margin-left: 10px;
+    .parrafo-1, .parrafo-2 {
+        text-align: left;
+        margin: 20px 50% 30px 30px;
+    }
+  }

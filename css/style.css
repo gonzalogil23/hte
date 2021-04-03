@@ -1,0 +1,380 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f3f7f7;
+  color: #3d524d;
+  font-size: 20px;
+  font-family: "Roboto", sans-serif;
+}
+
+.header {
+  background-color: rgba(0, 0, 0, 0.705);
+}
+
+.Home {
+  text-align: center;
+  color: #141414;
+  background-image: url(../images/vegetables.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  height: 100vh;
+  z-index: -3;
+}
+
+h1 {
+  font-size: 16px;
+  letter-spacing: 2px;
+  font-weight: bold;
+  font-family: "Oswald", sans-serif;
+  position: absolute;
+  display: inline;
+  color: white;
+  padding: 4px;
+}
+
+.imagenLogo {
+  max-height: 600px;
+  max-width: auto;
+  position: relative;
+  top: 50px;
+  padding: 50px 20px;
+}
+
+.encabezado {
+  display: flex;
+  justify-content: flex-end;
+}
+.encabezado a {
+  text-decoration: none;
+  color: white;
+  font-size: 19px;
+  transition: all 0.2s ease-out;
+  padding: 10px 20px;
+  text-shadow: rgba(185, 185, 185, 0.233) 0 1px;
+}
+.encabezado a:visited {
+  text-decoration: none;
+  color: white;
+}
+.encabezado a:hover {
+  text-decoration: underline;
+  transform: scale(1.1);
+  color: #aed8d8;
+  text-shadow: none;
+}
+
+.aboutUs {
+  font-size: 2.5em;
+  text-align: left;
+  text-shadow: #213131 0 2px;
+  font-family: "Oswald", sans-serif;
+  padding: 20px;
+  letter-spacing: 2px;
+}
+
+.fotos {
+  display: flex;
+  justify-content: flex-end;
+}
+.fotos .fotoCostado {
+  max-height: 350px;
+  max-width: auto;
+  position: relative;
+  bottom: 380px;
+  border: solid 2px rgba(172, 155, 108, 0.87);
+  border-radius: 5px;
+}
+.fotos .fotoFrente {
+  max-height: 350px;
+  max-width: auto;
+  position: relative;
+  left: 130px;
+  bottom: 80px;
+  border: solid 2px rgba(172, 155, 108, 0.87);
+  border-radius: 5px;
+}
+
+.historia {
+  text-indent: 20px;
+  padding: 20px auto;
+  margin-left: 10px;
+}
+.historia .parrafo-1,
+.historia .parrafo-2 {
+  text-align: left;
+  margin: 20px 50% 30px 30px;
+}
+
+.armadoEvento {
+  color: #3d524d;
+  padding: 30px;
+  margin-bottom: 30px;
+}
+.armadoEvento .armado {
+  font-size: 2.5em;
+  text-align: center;
+  color: #3d524d;
+  text-shadow: #213131 0 2px;
+  font-family: "Oswald", sans-serif;
+  padding: 40px;
+  letter-spacing: 2px;
+}
+
+.card {
+  border: 2px solid rgba(0, 0, 0, 0.125) !important;
+  border-radius: 3px;
+  margin: 20px auto;
+  height: 280px;
+  width: 200px;
+  box-shadow: 3px -3px 5px 0px #dfe5c0;
+}
+.card .card-img-top {
+  height: 80px;
+  padding: 10px 55px;
+}
+
+.servicios1 {
+  background-image: url(../images/catering.jpg);
+  height: 100vh;
+  width: auto;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.servicios1 .tituloServicios {
+  font-size: 2.5em;
+  text-align: center;
+  font-family: "Oswald", sans-serif;
+  color: #010505;
+  text-shadow: #f3f7f7 0 2px;
+  padding: 20px;
+  letter-spacing: 2px;
+}
+.servicios1 .events {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  color: #032424;
+}
+.servicios1 .events .eventos1 {
+  background-color: rgba(255, 255, 255, 0.75);
+  height: 300px;
+  width: 40%;
+  text-align: left;
+  margin-top: 6%;
+  padding: 2% 2%;
+}
+.servicios1 .events .eventos1 p {
+  line-height: 25px;
+}
+.servicios1 .events .eventos1 ul {
+  list-style: none;
+  line-height: 30px;
+  margin-top: 15px;
+}
+.servicios1 .events .eventos1 .eventosTitulo {
+  text-align: center;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-shadow: #3d524d 0 1px;
+  margin: 20px auto;
+}
+
+.enlaceCarta {
+  margin: 50px auto;
+  text-align: left;
+  font-weight: bold;
+  font-size: 22px;
+  color: #030e0e;
+  text-shadow: #f3f7f7 0 1px;
+  background-color: rgba(255, 255, 255, 0.75);
+  display: inline;
+  display: flex;
+  justify-content: center;
+  width: 630px;
+}
+.enlaceCarta .accesoCarta {
+  font-weight: bold;
+  text-decoration: none;
+  color: #1a3030;
+  text-shadow: #030e0e 0 1px;
+  transition: all 0.5s ease-out;
+}
+.enlaceCarta .accesoCarta:hover {
+  color: #0b1616;
+  transform: scale(1.2);
+}
+
+.contact {
+  padding: 40px 40px;
+  background-image: url(../images/bruschetta.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: auto;
+  width: auto;
+  letter-spacing: 2px;
+}
+.contact .contacto1 {
+  font-size: 2.5em;
+  text-align: center;
+  font-family: "Oswald", sans-serif;
+  text-shadow: #3d524d 0 2px;
+  margin-bottom: 20px;
+}
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  position: relative;
+  left: 780px;
+}
+.formulario button {
+  width: 60px;
+  height: 25px;
+  border: solid 1px #ac9b6c;
+  padding-bottom: 3px;
+  margin: 20px 0 !important;
+}
+.formulario button:hover {
+  background-color: #f3f7f7;
+  font-weight: bold;
+  color: #032424;
+  border: solid 2px #817451;
+}
+.formulario textarea {
+  resize: none;
+  width: 100%;
+  height: 150px;
+}
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer .footer1 {
+  list-style: none;
+  color: #121b1b;
+  text-decoration: none;
+  font-size: 14px;
+  text-align: center;
+  position: relative;
+  padding: 10px;
+  line-height: 20px;
+  transition: all 0.2s ease;
+}
+.footer .footer1 a:link {
+  color: #121b1b;
+  text-decoration: none;
+}
+.footer .footer1 a:visited {
+  color: #121b1b;
+  text-decoration: none;
+}
+.footer .footer1 a:hover {
+  color: #005555;
+  font-weight: bold;
+}
+.footer .imagenLogoFooter {
+  max-height: 100px;
+  max-width: auto;
+}
+.footer .copyright {
+  color: #121b1b;
+  text-decoration: none;
+  font-size: 10px;
+  text-align: center;
+  letter-spacing: -1px;
+  display: flex;
+  justify-content: center;
+}
+
+.whatsapp {
+  max-height: 50px;
+  max-width: auto;
+  position: fixed;
+  right: 0;
+  bottom: 200px;
+  transition: all 0.3s ease-in-out;
+}
+.whatsapp:hover {
+  transform: translateX(-20px);
+}
+
+.logoInstagram {
+  max-height: 50px;
+  max-width: auto;
+  transition: all 0.3s ease;
+}
+.logoInstagram:hover {
+  transform: translateY(-10px);
+}
+
+.logoFacebook {
+  max-height: 50px;
+  max-width: auto;
+  transition: all 0.3s ease;
+}
+.logoFacebook:hover {
+  transform: translateY(-10px);
+}
+
+.logoYoutube {
+  max-height: 50px;
+  max-width: auto;
+  margin: auto 20px;
+  transition: all 0.3s ease;
+}
+.logoYoutube:hover {
+  transform: translateY(-10px);
+}
+
+.textoCarta {
+  font-size: 2.5em;
+  text-align: center;
+  text-shadow: #213131 0 2px;
+  font-family: "Oswald", sans-serif;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.carousel-inner {
+  position: relative;
+  left: 280px;
+  width: 800px !important;
+}
+.carousel-inner h5 {
+  color: #010505;
+  text-shadow: rgba(215, 216, 216, 0.685) 0 0.5px;
+}
+.carousel-inner p {
+  color: rgba(0, 0, 0, 0.705);
+}
+
+.carousel-control-prev {
+  left: 200px !important;
+}
+
+.carousel-control-next {
+  right: 190px !important;
+}
+
+.fotosSaladas,
+.fotosDulces {
+  border: solid 2px black;
+  border-radius: 3px;
+  width: 100%;
+  height: 600px;
+}
+
+/*# sourceMappingURL=style.css.map */

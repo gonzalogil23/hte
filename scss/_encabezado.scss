@@ -1,0 +1,33 @@
+.encabezado {
+    display: flex;
+    justify-content: flex-end;
+
+    a{
+    text-decoration: none;
+    color: rgb(255, 255, 255); 
+    font-size: 19px;
+    transition: all 0.2s ease-out;
+    padding: 10px 20px;
+    &:visited {
+        text-decoration: none;
+        color: rgb(255, 255, 255);
+
+    }
+    &:hover{
+        text-decoration: underline;
+        transform: scale(1.1);
+        color: rgb(174, 216, 216);
+        text-shadow: none;
+    }
+    }
+}
+h1 {
+    font-size: 16px;
+    letter-spacing: 2px;
+    font-weight: bold;
+    font-family: "Oswald", sans-serif;
+    position: absolute;
+    display: inline;
+    color: rgb(255, 255, 255);
+    padding: 4px;
+  }
