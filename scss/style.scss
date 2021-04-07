@@ -90,24 +90,23 @@ h1 {
 .fotos {
   display: flex;
   justify-content: flex-end;
-
   .fotoCostado {
     max-height: 350px;
     max-width: auto;
     position: relative;
-    bottom: 380px;
+    bottom: 500px;
     border: solid 2px rgba(172, 155, 108, 0.87);
-    border-radius: 5px;
+    border-radius: 8px;
   }
 
   .fotoFrente {
     max-height: 350px;
     max-width: auto;
     position: relative;
-    left: 130px;
-    bottom: 80px;
+    left: 160px;
+    bottom: 200px;
     border: solid 2px rgba(172, 155, 108, 0.87);
-    border-radius: 5px;
+    border-radius: 8px;
   }
 }
 
@@ -124,15 +123,15 @@ h1 {
 
 .armadoEvento {
   color: rgb(61, 82, 77);
-  padding: 30px;
+  padding: 10px;
   margin-bottom: 30px;
   .armado {
-    font-size: 2.5em;
+    font-size: $titleFontSize;
     text-align: center;
     color: rgb(61, 82, 77);
     text-shadow: rgb(33, 49, 49) 0 2px;
     font-family: "Oswald", sans-serif;
-    padding: 40px;
+    padding-bottom: 40px;
     letter-spacing: 2px;
   }
 }
@@ -152,7 +151,7 @@ h1 {
 
 .servicios1 {
   background-image: url(../images/catering.jpg);
-  height: 100vh;
+  height: 80vh;
   width: auto;
   background-attachment: fixed;
   background-position: center;
@@ -160,11 +159,11 @@ h1 {
   background-size: cover;
 
   .tituloServicios {
-    font-size: 2.5em;
+    font-size: $titleFontSize;
     text-align: center;
     font-family: "Oswald", sans-serif;
-    color: rgb(1, 5, 5);
-    text-shadow: rgb(243, 247, 247) 0 2px;
+    color: rgb(243, 247, 247);
+    text-shadow: rgb(1, 5, 5) 2px 2px;
     padding: 20px;
     letter-spacing: 2px;
   }
@@ -199,27 +198,35 @@ h1 {
   }
 }
 
-.enlaceCarta {
-  margin: 50px auto;
-  text-align: left;
-  font-weight: bold;
-  font-size: 22px;
-  color: rgb(3, 14, 14);
-  text-shadow: rgb(243, 247, 247) 0 1px;
-  background-color: rgba(255, 255, 255, 0.75);
-  display: inline;
+.carta { 
   display: flex;
-  justify-content: center;
-  width: 630px;
+  justify-content: space-around;
+  margin: 30px auto;
+  
+  .enlaceCarta {
+    p {
+      font-size: 30px;
+      text-align: center;
+      color: rgb(61, 82, 77);
+      text-shadow: rgb(33, 49, 49) 0 2px;
+      font-family: "Oswald", sans-serif;
+      text-transform: uppercase;
+  }
+    font-weight: 500;
+    width: 500px;
+    text-align: center;
+  }
   .accesoCarta {
-    font-weight: bold;
-    text-decoration: none;
-    color: rgb(26, 48, 48);
-    text-shadow: rgb(3, 14, 14) 0 1px;
-    transition: all 0.5s ease-out;
+    border: solid 3px rgb(18, 27, 27);
+    border-radius: 50%;
+    height: 240px;
+    width: 230px;
+    transition: all .2s ease-out;
+    filter: blur(1.5px);
     &:hover {
-      color: rgb(11, 22, 22);
-      transform: scale(1.2);
+      border: solid 3px rgb(33, 49, 49);
+      transform: scale(1.1);
+      filter: none;
     }
   }
 }

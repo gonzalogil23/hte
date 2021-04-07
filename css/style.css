@@ -86,18 +86,18 @@ h1 {
   max-height: 350px;
   max-width: auto;
   position: relative;
-  bottom: 380px;
+  bottom: 500px;
   border: solid 2px rgba(172, 155, 108, 0.87);
-  border-radius: 5px;
+  border-radius: 8px;
 }
 .fotos .fotoFrente {
   max-height: 350px;
   max-width: auto;
   position: relative;
-  left: 130px;
-  bottom: 80px;
+  left: 160px;
+  bottom: 200px;
   border: solid 2px rgba(172, 155, 108, 0.87);
-  border-radius: 5px;
+  border-radius: 8px;
 }
 
 .historia {
@@ -113,7 +113,7 @@ h1 {
 
 .armadoEvento {
   color: #3d524d;
-  padding: 30px;
+  padding: 10px;
   margin-bottom: 30px;
 }
 .armadoEvento .armado {
@@ -122,7 +122,7 @@ h1 {
   color: #3d524d;
   text-shadow: #213131 0 2px;
   font-family: "Oswald", sans-serif;
-  padding: 40px;
+  padding-bottom: 40px;
   letter-spacing: 2px;
 }
 
@@ -141,7 +141,7 @@ h1 {
 
 .servicios1 {
   background-image: url(../images/catering.jpg);
-  height: 100vh;
+  height: 80vh;
   width: auto;
   background-attachment: fixed;
   background-position: center;
@@ -152,8 +152,8 @@ h1 {
   font-size: 2.5em;
   text-align: center;
   font-family: "Oswald", sans-serif;
-  color: #010505;
-  text-shadow: #f3f7f7 0 2px;
+  color: #f3f7f7;
+  text-shadow: #010505 2px 2px;
   padding: 20px;
   letter-spacing: 2px;
 }
@@ -187,29 +187,36 @@ h1 {
   margin: 20px auto;
 }
 
-.enlaceCarta {
-  margin: 50px auto;
-  text-align: left;
-  font-weight: bold;
-  font-size: 22px;
-  color: #030e0e;
-  text-shadow: #f3f7f7 0 1px;
-  background-color: rgba(255, 255, 255, 0.75);
-  display: inline;
+.carta {
   display: flex;
-  justify-content: center;
-  width: 630px;
+  justify-content: space-around;
+  margin: 30px auto;
 }
-.enlaceCarta .accesoCarta {
-  font-weight: bold;
-  text-decoration: none;
-  color: #1a3030;
-  text-shadow: #030e0e 0 1px;
-  transition: all 0.5s ease-out;
+.carta .enlaceCarta {
+  font-weight: 500;
+  width: 500px;
+  text-align: center;
 }
-.enlaceCarta .accesoCarta:hover {
-  color: #0b1616;
-  transform: scale(1.2);
+.carta .enlaceCarta p {
+  font-size: 30px;
+  text-align: center;
+  color: #3d524d;
+  text-shadow: #213131 0 2px;
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+}
+.carta .accesoCarta {
+  border: solid 3px #121b1b;
+  border-radius: 50%;
+  height: 240px;
+  width: 230px;
+  transition: all 0.2s ease-out;
+  filter: blur(1.5px);
+}
+.carta .accesoCarta:hover {
+  border: solid 3px #213131;
+  transform: scale(1.1);
+  filter: none;
 }
 
 .contact {
