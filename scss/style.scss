@@ -19,6 +19,14 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+.bodyCarta {
+  background-image: url(../images/bg-white.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+  background-attachment: fixed;
+}
+
 .header {
   background-color: rgba(0, 0, 0, 0.705);
 }
@@ -35,36 +43,35 @@ body {
   z-index: -3;
 }
 
-h1 {
-  font-size: 16px;
+.titulo {
   letter-spacing: 2px;
   font-weight: bold;
   font-family: "Oswald", sans-serif;
-  position: absolute;
   display: inline;
   color: rgb(255, 255, 255);
-  padding: 4px;
+}
+.navbar-brand {
+  font-size: 2.25rem !important;
 }
 
 .imagenLogo {
-  max-height: 600px;
-  max-width: auto;
+  max-height: auto;
+  max-width: 50%;
   position: relative;
-  top: 50px;
+  top: 30px;
   padding: 50px 20px;
 }
 
 .encabezado {
-  display: flex;
-  justify-content: flex-end;
-
   a {
     text-decoration: none;
     color: rgb(255, 255, 255);
     font-size: 19px;
     transition: all 0.2s ease-out;
-    padding: 10px 20px;
+    padding: 0 20px;
     text-shadow: rgba(185, 185, 185, 0.233) 0 1px;
+    position: relative;
+    left: 100px;
     &:visited {
       text-decoration: none;
       color: rgb(255, 255, 255);
@@ -72,12 +79,11 @@ h1 {
     &:hover {
       text-decoration: underline;
       transform: scale(1.1);
-      color: rgb(174, 216, 216);
+      color: rgb(255, 255, 255) !important;
       text-shadow: none;
     }
   }
 }
-
 .aboutUs {
   font-size: $titleFontSize;
   text-align: left;
@@ -150,10 +156,9 @@ h1 {
 }
 
 .servicios1 {
-  background-image: url(../images/catering.jpg);
+  background-image: url(../images/bg-image-mesada.jpg);
   height: 80vh;
   width: auto;
-  background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -162,8 +167,8 @@ h1 {
     font-size: $titleFontSize;
     text-align: center;
     font-family: "Oswald", sans-serif;
-    color: rgb(243, 247, 247);
-    text-shadow: rgb(1, 5, 5) 2px 2px;
+    color: rgb(3, 36, 36);
+    text-shadow: rgb(255, 255, 255) 2px 2px;
     padding: 20px;
     letter-spacing: 2px;
   }
@@ -198,11 +203,11 @@ h1 {
   }
 }
 
-.carta { 
+.carta {
   display: flex;
   justify-content: space-around;
   margin: 30px auto;
-  
+
   .enlaceCarta {
     p {
       font-size: 30px;
@@ -211,7 +216,7 @@ h1 {
       text-shadow: rgb(33, 49, 49) 0 2px;
       font-family: "Oswald", sans-serif;
       text-transform: uppercase;
-  }
+    }
     font-weight: 500;
     width: 500px;
     text-align: center;
@@ -221,7 +226,7 @@ h1 {
     border-radius: 50%;
     height: 240px;
     width: 230px;
-    transition: all .2s ease-out;
+    transition: all 0.2s ease-out;
     filter: blur(1.5px);
     &:hover {
       border: solid 3px rgb(33, 49, 49);
@@ -363,7 +368,7 @@ h1 {
   font-size: $titleFontSize;
   text-align: center;
   text-shadow: rgb(33, 49, 49) 0 2px;
-  font-family: "Oswald", sans-serif;
+  font-family: "Roboto", sans-serif;
   padding: 20px;
   display: flex;
   justify-content: center;
@@ -375,7 +380,7 @@ h1 {
   width: 800px !important;
   h5 {
     color: rgb(1, 5, 5);
-    text-shadow: rgba(215, 216, 216, 0.685) 0 .5px;
+    text-shadow: rgba(215, 216, 216, 0.685) 0 0.5px;
   }
   p {
     color: rgba(0, 0, 0, 0.705);

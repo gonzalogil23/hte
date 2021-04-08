@@ -12,7 +12,7 @@
 
     <title>Carta | The Gluten Freak. </title>
     <link rel="shortcut icon" href="images/favicon-16x16.png" type="image/x-icon">
-    
+
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -31,18 +31,27 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
 
-<body>
-    <header class="header fixed-top">
-        <h1>THE GLUTEN FREAK</h1>
-        <nav>
-            <div class="encabezado">
-                <a href="index.html" class="inicioHeader">Inicio</a>
-                <a href="index.html #Nosotros" class="nosotrosHeader">Nosotros</a>
-                <a href="index.html #Servicios" class="serviciosHeader">Servicios</a>
-                <a href="index.html #Contacto" class="contactoHeader">Contacto</a>
+<body class="bodyCarta">
+    <header class="header fixed-top container-fluid">
+
+        <nav class="navbar navbar-expand-lg navbar-dark" style="padding: 0 !important;">
+            <div class="container-fluid">
+                <a class="navbar-brand titulo" href="#Nosotros">THE GLUTEN FREAK</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav encabezado">
+                        <a class="nav-link inicioHeader" aria-current="page" href="#Inicio">Inicio</a>
+                        <a class="nav-link nosotrosHeader" href="#Nosotros">Nosotros</a>
+                        <a class="nav-link serviciosHeader" href="#Servicios">Servicios</a>
+                        <a class="nav-link contactoHeader" href="#Contacto">Contacto</a>
+                    </div>
+                </div>
             </div>
         </nav>
-
     </header>
 
     <main>
@@ -101,7 +110,7 @@
             </button>
         </div>
 
-        <h2 class="textoCarta">¡Tambien tenemos opciones dulces!</h2>
+        <h2 class="textoCarta mt-5">¡Tambien tenemos opciones dulces!</h2>
         <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-indicators">
                 <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"

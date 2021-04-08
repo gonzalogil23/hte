@@ -11,6 +11,14 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+.bodyCarta {
+  background-image: url(../images/bg-white.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+  background-attachment: fixed;
+}
+
 .header {
   background-color: rgba(0, 0, 0, 0.705);
 }
@@ -27,36 +35,35 @@ body {
   z-index: -3;
 }
 
-h1 {
-  font-size: 16px;
+.titulo {
   letter-spacing: 2px;
   font-weight: bold;
   font-family: "Oswald", sans-serif;
-  position: absolute;
   display: inline;
   color: white;
-  padding: 4px;
+}
+
+.navbar-brand {
+  font-size: 2.25rem !important;
 }
 
 .imagenLogo {
-  max-height: 600px;
-  max-width: auto;
+  max-height: auto;
+  max-width: 50%;
   position: relative;
-  top: 50px;
+  top: 30px;
   padding: 50px 20px;
 }
 
-.encabezado {
-  display: flex;
-  justify-content: flex-end;
-}
 .encabezado a {
   text-decoration: none;
   color: white;
   font-size: 19px;
   transition: all 0.2s ease-out;
-  padding: 10px 20px;
+  padding: 0 20px;
   text-shadow: rgba(185, 185, 185, 0.233) 0 1px;
+  position: relative;
+  left: 100px;
 }
 .encabezado a:visited {
   text-decoration: none;
@@ -65,7 +72,7 @@ h1 {
 .encabezado a:hover {
   text-decoration: underline;
   transform: scale(1.1);
-  color: #aed8d8;
+  color: white !important;
   text-shadow: none;
 }
 
@@ -140,10 +147,9 @@ h1 {
 }
 
 .servicios1 {
-  background-image: url(../images/catering.jpg);
+  background-image: url(../images/bg-image-mesada.jpg);
   height: 80vh;
   width: auto;
-  background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -152,8 +158,8 @@ h1 {
   font-size: 2.5em;
   text-align: center;
   font-family: "Oswald", sans-serif;
-  color: #f3f7f7;
-  text-shadow: #010505 2px 2px;
+  color: #032424;
+  text-shadow: white 2px 2px;
   padding: 20px;
   letter-spacing: 2px;
 }
@@ -349,7 +355,7 @@ h1 {
   font-size: 2.5em;
   text-align: center;
   text-shadow: #213131 0 2px;
-  font-family: "Oswald", sans-serif;
+  font-family: "Roboto", sans-serif;
   padding: 20px;
   display: flex;
   justify-content: center;

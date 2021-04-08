@@ -38,17 +38,28 @@
 <body>
     <header class="header fixed-top container-fluid">
 
-        <h1 class="col-4"> THE GLUTEN FREAK</h1>
-        <nav>
-            <div class="encabezado">
-                <a href="#Inicio" class="inicioHeader">Inicio</a>
-                <a href="#Nosotros" class="nosotrosHeader">Nosotros</a>
-                <a href="#Servicios" class="serviciosHeader">Servicios</a>
-                <a href="#Contacto" class="contactoHeader">Contacto</a>
+    <nav class="navbar navbar-expand-lg navbar-dark" style="padding: 0 !important;">
+        <div class="container-fluid">
+          <a class="navbar-brand titulo" href="#Nosotros">THE GLUTEN FREAK</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav encabezado">
+              <a class="nav-link inicioHeader" aria-current="page" href="#Inicio">Inicio</a>
+              <a class="nav-link nosotrosHeader" href="#Nosotros">Nosotros</a>
+              <a class="nav-link serviciosHeader" href="#Servicios">Servicios</a>
+              <a class="nav-link contactoHeader" href="#Contacto">Contacto</a>
             </div>
-        </nav>
+          </div>
+        </div>
+      </nav>
 
     </header>
+
+
+
+
 
     <main class="col-sm-12 col-md-12">
         <section id="Inicio" class="Home container-fluid">
@@ -151,27 +162,28 @@
         <section id="Contacto" class="contact container-fluid">
             <h2 class="contacto1 animate__animated animate__fadeIn">CONTACTO</h2>
             <form action="" method="post" class="formulario">
-                <label for="fullName">Nombre completo</label>
-                <input type="text" id="fullName">
+                <label for="fullName" class="form-label">Nombre completo</label>
+                <input type="text" id="fullName" class="form-control">
 
-                <label for="email">Email</label>
-                <input type="email" name="" id="email" placeholder="ejemplo@gmail.com">
+                <label for="fullName" class="form-label">Teléfono</label>
+                <input type="text" id="fullName" class="form-control">
 
-                <label for="coment">Comentarios</label>
-                <textarea name="" id="coment" cols="30" rows="10"></textarea>
+                <label for="email" class="form-label">Email</label>
+                <input type="email" name="" id="email" class="form-control" placeholder="ejemplo@gmail.com">
+
+                <label for="coment" class="form-label">Comentarios</label>
+                <textarea name="" id="coment" cols="30" rows="10" class="form-control"></textarea>
                 <fieldset>
                     <legend>¿Como nos conociste?</legend>
-                    <label for="instagram">Instagram</label>
-                    <input type="radio" id="instagram">
+                    <label for="instagram" class="form-check-label">Instagram</label>
+                    <input type="checkbox" id="instagram" class="form-check-input" >
 
-                    <label for="facebook">Facebook</label>
-                    <input type="radio" name="" id="facebook">
+                    <label for="facebook" class="form-check-label">Facebook</label>
+                    <input type="checkbox" name="" id="facebook" class="form-check-input" >
 
-                    <label for="internet">Internet</label>
-                    <input type="radio" name="" id="internet">
+                    <label for="internet" class="form-check-label">Internet</label>
+                    <input type="checkbox" name="" id="internet" class="form-check-input" >
                 </fieldset>
-
-
 
                 <button type="submit">Enviar</button>
             </form>
