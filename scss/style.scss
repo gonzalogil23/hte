@@ -41,6 +41,10 @@ body {
   background-attachment: fixed;
   height: 100vh;
   z-index: -3;
+  @media screen and (max-width: 600px) {
+    height: 330px;
+    background-attachment: unset;
+  }
 }
 
 .titulo {
@@ -60,6 +64,11 @@ body {
   position: relative;
   top: 30px;
   padding: 50px 20px;
+  @media screen and (max-width: 600px) {
+    max-width: 52%;
+    top: 76px;
+    padding: 0;
+  }
 }
 
 .encabezado {
@@ -84,49 +93,35 @@ body {
     }
   }
 }
-.aboutUs {
-  font-size: $titleFontSize;
-  text-align: left;
-  text-shadow: rgb(33, 49, 49) 0 2px;
-  font-family: "Oswald", sans-serif;
-  padding: 20px;
-  letter-spacing: 2px;
-}
 
-.fotos {
-  display: flex;
-  justify-content: flex-end;
-  .fotoCostado {
-    max-height: 350px;
-    max-width: auto;
-    position: relative;
-    bottom: 500px;
-    border: solid 2px rgba(172, 155, 108, 0.87);
-    border-radius: 8px;
-  }
+.Nosotros1 {
+  margin-top: 20px;
 
-  .fotoFrente {
-    max-height: 350px;
-    max-width: auto;
-    position: relative;
-    left: 160px;
-    bottom: 200px;
-    border: solid 2px rgba(172, 155, 108, 0.87);
-    border-radius: 8px;
+  .historia {
+    padding: 20px auto;
+    margin-left: 10px;
+    .parrafo-1,
+    .parrafo-2 {
+      text-align: left;
+      margin: 20px 50% 30px 30px;
+    }
+    .foto {
+      border: solid 2px rgba(172, 155, 108, 0.87);
+      border-radius: 8px;
+    }
+    .aboutUs {
+      font-size: $titleFontSize;
+      text-align: left;
+      text-shadow: rgb(33, 49, 49) 0 2px;
+      font-family: "Oswald", sans-serif;
+      padding: 20px;
+      letter-spacing: 2px;
+      @media screen and (max-width: 600px) {
+        padding: 0;
+      }
+    }
   }
 }
-
-.historia {
-  text-indent: 20px;
-  padding: 20px auto;
-  margin-left: 10px;
-  .parrafo-1,
-  .parrafo-2 {
-    text-align: left;
-    margin: 20px 50% 30px 30px;
-  }
-}
-
 .armadoEvento {
   color: rgb(61, 82, 77);
   padding: 10px;
@@ -162,7 +157,9 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-
+  @media screen and (max-width: 600px) {
+    height: 100vh;
+  }
   .tituloServicios {
     font-size: $titleFontSize;
     text-align: center;
@@ -177,6 +174,11 @@ body {
     flex-direction: row;
     justify-content: space-around;
     color: rgb(3, 36, 36);
+    @media screen and (max-width: 600px) {
+      flex-direction: column;
+      align-items: center;
+      row-gap: 15px;
+    }
     .eventos1 {
       background-color: rgba(255, 255, 255, 0.75);
       height: 300px;
@@ -184,13 +186,29 @@ body {
       text-align: left;
       margin-top: 6%;
       padding: 2% 2%;
+      @media screen and (max-width: 600px) {
+        height: 100%;
+        width: 100%;
+        margin-top: 0;
+        text-align: center;
+      }
       p {
         line-height: 25px;
+        @media screen and (max-width: 600px) {
+          line-height: none;
+          margin-bottom: 0;
+        }
       }
       ul {
         list-style: none;
         line-height: 30px;
         margin-top: 15px;
+        @media screen and (max-width: 600px) {
+          line-height: none;
+          margin-top: 0;
+          font-style: italic;
+          padding-left: 0;
+        }
       }
       .eventosTitulo {
         text-align: center;
@@ -198,6 +216,9 @@ body {
         text-transform: uppercase;
         text-shadow: rgb(61, 82, 77) 0 1px;
         margin: 20px auto;
+        @media screen and (max-width: 600px) {
+          margin: 5px;
+        }
       }
     }
   }
@@ -207,6 +228,12 @@ body {
   display: flex;
   justify-content: space-around;
   margin: 30px auto;
+  @media screen and (max-width: 600px) {
+    row-gap: 20px;
+    margin: 30px 30px;
+    flex-direction: column;
+    align-items: center;
+  }
 
   .enlaceCarta {
     p {
@@ -220,6 +247,9 @@ body {
     font-weight: 500;
     width: 500px;
     text-align: center;
+    @media screen and (max-width: 600px) {
+      width: 100%;
+    }
   }
   .accesoCarta {
     border: solid 3px rgb(18, 27, 27);
@@ -227,7 +257,6 @@ body {
     height: 240px;
     width: 230px;
     transition: all 0.2s ease-out;
-    filter: blur(1.5px);
     &:hover {
       border: solid 3px rgb(33, 49, 49);
       transform: scale(1.1);
@@ -259,6 +288,11 @@ body {
   width: 40%;
   position: relative;
   left: 780px;
+  @media screen and (max-width: 600px) {
+    position: unset;
+    left: unset;
+    width: 100%;
+  }
   button {
     width: 60px;
     height: 25px;
@@ -284,7 +318,12 @@ body {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-
+  @media screen and (max-width: 600px) {
+    flex-direction: column;
+    height: 500px;
+    justify-content: unset;
+    margin: 30px 0;
+  }
   .footer1 {
     list-style: none;
     color: rgb(18, 27, 27);
@@ -329,9 +368,12 @@ body {
   max-height: 50px;
   max-width: auto;
   position: fixed;
-  right: 0;
-  bottom: 200px;
+  right: 5px;
+  bottom: 50px;
   transition: all 0.3s ease-in-out;
+  @media screen and (max-width: 600px) {
+    bottom: 250px;
+  }
   &:hover {
     transform: translateX(-20px);
   }

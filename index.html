@@ -38,36 +38,72 @@
 <body>
     <header class="header fixed-top container-fluid">
 
-    <nav class="navbar navbar-expand-lg navbar-dark" style="padding: 0 !important;">
-        <div class="container-fluid">
-          <a class="navbar-brand titulo" href="#Nosotros">THE GLUTEN FREAK</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav encabezado">
-              <a class="nav-link inicioHeader" aria-current="page" href="#Inicio">Inicio</a>
-              <a class="nav-link nosotrosHeader" href="#Nosotros">Nosotros</a>
-              <a class="nav-link serviciosHeader" href="#Servicios">Servicios</a>
-              <a class="nav-link contactoHeader" href="#Contacto">Contacto</a>
+        <nav class="navbar navbar-expand-lg navbar-dark" style="padding: 0 !important;">
+            <div class="container-fluid">
+                <a class="navbar-brand titulo" href="#Nosotros">THE GLUTEN FREAK</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav encabezado">
+                        <a class="nav-link inicioHeader" aria-current="page" href="#Inicio">Inicio</a>
+                        <a class="nav-link nosotrosHeader" href="#Nosotros">Nosotros</a>
+                        <a class="nav-link serviciosHeader" href="#Servicios">Servicios</a>
+                        <a class="nav-link contactoHeader" href="#Contacto">Contacto</a>
+                    </div>
+                </div>
             </div>
-          </div>
-        </div>
-      </nav>
+        </nav>
 
     </header>
 
-
-
-
-
-    <main class="col-sm-12 col-md-12">
+    <main class="col-12 col-sm-12 col-md-12">
         <section id="Inicio" class="Home container-fluid">
             <img src="images/logoNegro.png" alt="logo" class="imagenLogo animate__animated animate__fadeIn">
 
         </section>
+
+
         <section id="Nosotros" class="Nosotros1 container">
-            <h2 class="aboutUs animate__animated animate__fadeIn">SOBRE NOSOTROS</h2>
+            
+        <div class="historia">
+            <div class="row featurette col-12 mt-3">
+                <div class="col-md-7">
+                    <h2 class="featurette-heading aboutUs">SOBRE NOSOTROS</h2>
+                    <p class="lead">The Gluten Freak nacio en el año 2019 con la idea de llevar una propuesta
+                        gastronomica
+                        inclusiva a eventos brindando platos y recetas libre de gluten.</p>
+                </div>
+                <div class="col-md-5">
+
+                    <img src="./images/FoodTruckFrente.jpg" alt="" class="featurette-image img-fluid mx-auto foto" width="400"
+                        height="400">
+
+                </div>
+            </div>
+
+            <div class="row featurette col-12 mt-3">
+                <div class="col-md-7 order-md-2">
+                    <h2 class="featurette-heading">Oh yeah, it’s that good. <span class="text-muted">See for
+                            yourself.</span></h2> <!--Cambiar h2!-->
+                    <p class="lead">Hemos recorrido con nuestro truck muchos lugares a lo largo de la provincia de
+                        Córdoba
+                        brindando un servicio gastronómico de alta calidad a traves de nuestra cocina donde todo es
+                        artesanal, utilizando los mejores productos. Comprometidos a usar todo con sello sin tacc y
+                        evitando
+                        la contaminación cruzada.</p>
+                </div>
+                <div class="col-md-5 order-md-1">
+                    <img src="./images/FoodTruckCostado.jpg" alt="" class="featurette-image img-fluid mx-auto foto" width="400"
+                        height="400" style="margin-top: 20px !important;">
+
+                </div>
+            </div>
+        </div>
+
+            <!-- <h2 class="aboutUs animate__animated animate__fadeIn">SOBRE NOSOTROS</h2>
             <div class="historia col-sm-4 col-md-5 col-lg-6">
                 <p class="parrafo-1">The Gluten Freak nacio en el año 2019 con la idea de llevar
                     una propuesta gastronomica inclusiva
@@ -84,8 +120,9 @@
             <div class="fotos">
                 <img src="images/FoodTruckFrente.jpg" alt="food truck frente" class="fotoFrente">
                 <img src="images/FoodTruckCostado.jpg" alt="food truck costado" class="fotoCostado">
-            </div>
+            </div> -->
         </section>
+
 
         <section class="armadoEvento container">
             <h2 class="armado animate__animated animate__fadeIn">ARMAMOS EL EVENTO JUNTO A VOS</h2>
@@ -123,9 +160,11 @@
         </section>
 
         <section class="carta container">
-            <div class="enlaceCarta"> <p>Te presentamos algunos de nuestros productos.</p>
-                ¡Accede a nuestra carta haciendo click en la imagen! </div>
-            <a href="carta.html" target="_blank" ><img src="images/images-carta/MixBrusquetas3.jpg"
+            <div class="enlaceCarta">
+                <p>Te presentamos algunos de nuestros productos.</p>
+                ¡Accede a nuestra carta haciendo click en la imagen!
+            </div>
+            <a href="carta.html" target="_blank"><img src="images/images-carta/MixBrusquetas3.jpg"
                     alt="Brusquetas saladas / Enlace de la carta" class="accesoCarta"></a>
 
         </section>
@@ -176,13 +215,13 @@
                 <fieldset>
                     <legend>¿Como nos conociste?</legend>
                     <label for="instagram" class="form-check-label">Instagram</label>
-                    <input type="checkbox" id="instagram" class="form-check-input" >
+                    <input type="checkbox" id="instagram" class="form-check-input">
 
                     <label for="facebook" class="form-check-label">Facebook</label>
-                    <input type="checkbox" name="" id="facebook" class="form-check-input" >
+                    <input type="checkbox" name="" id="facebook" class="form-check-input">
 
                     <label for="internet" class="form-check-label">Internet</label>
-                    <input type="checkbox" name="" id="internet" class="form-check-input" >
+                    <input type="checkbox" name="" id="internet" class="form-check-input">
                 </fieldset>
 
                 <button type="submit">Enviar</button>
