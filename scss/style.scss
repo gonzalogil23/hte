@@ -55,7 +55,10 @@ body {
   color: rgb(255, 255, 255);
 }
 .navbar-brand {
-  font-size: 2.25rem !important;
+  font-size: 2.25rem;
+  @media screen and (max-width: 400px) {
+    font-size: 1.25rem;
+  }
 }
 
 .imagenLogo {
@@ -157,7 +160,10 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 459px) {
+    height: 100%;
+  }
+  @media screen and (min-width: 460px) and (max-width: 767px) {
     height: 100vh;
   }
   .tituloServicios {
@@ -166,7 +172,7 @@ body {
     font-family: "Oswald", sans-serif;
     color: rgb(3, 36, 36);
     text-shadow: rgb(255, 255, 255) 2px 2px;
-    padding: 20px;
+    padding-top: 20px;
     letter-spacing: 2px;
   }
   .events {
@@ -179,18 +185,26 @@ body {
       align-items: center;
       row-gap: 15px;
     }
+    @media screen and (min-width: 601px) and (max-width: 767px) {
+      column-gap: 15px;
+    }
     .eventos1 {
       background-color: rgba(255, 255, 255, 0.75);
       height: 300px;
       width: 40%;
       text-align: left;
-      margin-top: 6%;
+      margin-top: 20px;
       padding: 2% 2%;
       @media screen and (max-width: 600px) {
         height: 100%;
         width: 100%;
         margin-top: 0;
         text-align: center;
+      }
+      @media screen and (min-width: 601px) and (max-width: 767px) {
+        width: auto;
+        height: auto;
+        margin-top: unset;
       }
       p {
         line-height: 25px;
@@ -261,8 +275,9 @@ body {
     transition: all 0.2s ease-out;
     &:hover {
       border: solid 3px rgb(33, 49, 49);
-      transform: scale(1.1);
+      transform: scale(1.05);
       filter: none;
+      box-shadow: 3px -3px 10px 0px #b4b4b383;
     }
   }
 }
@@ -274,7 +289,6 @@ body {
   background-size: cover;
   height: auto;
   width: auto;
-  letter-spacing: 2px;
   .contacto1 {
     font-size: $titleFontSize;
     text-align: center;
@@ -294,6 +308,24 @@ body {
     position: unset;
     left: unset;
     width: 100%;
+  }
+  @media screen and (min-width: 601px) and (max-width: 767px) {
+    position: unset;
+    left: unset;
+    width: 100%;
+    align-items: center;
+    font-size: 18px;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1300px) {
+    position: unset;
+    left: unset;
+    width: 60%;
+    margin: 0 auto;
+    align-items: center;
+    font-size: 18px;
+    border: solid 2px rgba(173, 173, 173, 0.349);
+    background-color: rgba(245, 245, 245, 0.349);
+    border-radius: 10px;
   }
   button {
     width: 60px;

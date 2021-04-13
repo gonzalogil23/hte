@@ -50,7 +50,12 @@ body {
 }
 
 .navbar-brand {
-  font-size: 2.25rem !important;
+  font-size: 2.25rem;
+}
+@media screen and (max-width: 400px) {
+  .navbar-brand {
+    font-size: 1.25rem;
+  }
 }
 
 .imagenLogo {
@@ -155,7 +160,12 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 459px) {
+  .servicios1 {
+    height: 100%;
+  }
+}
+@media screen and (min-width: 460px) and (max-width: 767px) {
   .servicios1 {
     height: 100vh;
   }
@@ -166,7 +176,7 @@ body {
   font-family: "Oswald", sans-serif;
   color: #032424;
   text-shadow: white 2px 2px;
-  padding: 20px;
+  padding-top: 20px;
   letter-spacing: 2px;
 }
 .servicios1 .events {
@@ -182,12 +192,17 @@ body {
     row-gap: 15px;
   }
 }
+@media screen and (min-width: 601px) and (max-width: 767px) {
+  .servicios1 .events {
+    column-gap: 15px;
+  }
+}
 .servicios1 .events .eventos1 {
   background-color: rgba(255, 255, 255, 0.75);
   height: 300px;
   width: 40%;
   text-align: left;
-  margin-top: 6%;
+  margin-top: 20px;
   padding: 2% 2%;
 }
 @media screen and (max-width: 600px) {
@@ -196,6 +211,13 @@ body {
     width: 100%;
     margin-top: 0;
     text-align: center;
+  }
+}
+@media screen and (min-width: 601px) and (max-width: 767px) {
+  .servicios1 .events .eventos1 {
+    width: auto;
+    height: auto;
+    margin-top: unset;
   }
 }
 .servicios1 .events .eventos1 p {
@@ -275,8 +297,9 @@ body {
 }
 .carta .accesoCarta:hover {
   border: solid 3px #213131;
-  transform: scale(1.1);
+  transform: scale(1.05);
   filter: none;
+  box-shadow: 3px -3px 10px 0px #b4b4b383;
 }
 
 .contact {
@@ -286,7 +309,6 @@ body {
   background-size: cover;
   height: auto;
   width: auto;
-  letter-spacing: 2px;
 }
 .contact .contacto1 {
   font-size: 2.5em;
@@ -308,6 +330,28 @@ body {
     position: unset;
     left: unset;
     width: 100%;
+  }
+}
+@media screen and (min-width: 601px) and (max-width: 767px) {
+  .formulario {
+    position: unset;
+    left: unset;
+    width: 100%;
+    align-items: center;
+    font-size: 18px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1300px) {
+  .formulario {
+    position: unset;
+    left: unset;
+    width: 60%;
+    margin: 0 auto;
+    align-items: center;
+    font-size: 18px;
+    border: solid 2px rgba(173, 173, 173, 0.349);
+    background-color: rgba(245, 245, 245, 0.349);
+    border-radius: 10px;
   }
 }
 .formulario button {
