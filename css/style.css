@@ -209,8 +209,10 @@ body {
 }
 .servicios1 .events .eventos1 ul {
   list-style: none;
-  line-height: 30px;
+  padding: unset;
   margin-top: 15px;
+  font-style: italic;
+  text-align: center;
 }
 @media screen and (max-width: 600px) {
   .servicios1 .events .eventos1 ul {
