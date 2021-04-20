@@ -15,7 +15,7 @@ $titleFontSize: 2.5em;
 body {
   background-color: rgb(243, 247, 247);
   color: rgb(61, 82, 77);
-  font-size: 20px;
+  font-size: 18px;
   font-family: "Roboto", sans-serif;
 }
 
@@ -31,22 +31,6 @@ body {
   background-color: rgba(0, 0, 0, 0.705);
 }
 
-.Home {
-  text-align: center;
-  color: rgb(20, 20, 20);
-  background-image: url(../images/vegetables.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-  height: 100vh;
-  z-index: -3;
-  @media screen and (max-width: 600px) {
-    height: 330px;
-    background-attachment: unset;
-  }
-}
-
 .titulo {
   letter-spacing: 2px;
   font-weight: bold;
@@ -58,19 +42,6 @@ body {
   font-size: 2.25rem;
   @media screen and (max-width: 400px) {
     font-size: 1.25rem;
-  }
-}
-
-.imagenLogo {
-  max-height: auto;
-  max-width: 50%;
-  position: relative;
-  top: 30px;
-  padding: 50px 20px;
-  @media screen and (max-width: 600px) {
-    max-width: 52%;
-    top: 76px;
-    padding: 0;
   }
 }
 
@@ -97,16 +68,45 @@ body {
   }
 }
 
+
+.Home {
+  text-align: center;
+  color: rgb(20, 20, 20);
+  background-image: url(../images/vegetables.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  height: 100vh;
+  z-index: -3;
+  @media screen and (max-width: 600px) {
+    height: 330px;
+    background-attachment: unset;
+  }
+}
+
+.imagenLogo {
+  max-height: auto;
+  max-width: 50%;
+  position: relative;
+  top: 15px;
+  padding: 50px 20px;
+  @media screen and (max-width: 600px) {
+    max-width: 52%;
+    top: 76px;
+    padding: 0;
+  }
+}
+
+
 .Nosotros1 {
   margin-top: 20px;
 
   .historia {
     padding: 20px auto;
     margin-left: 10px;
-    .parrafo-1,
-    .parrafo-2 {
-      text-align: left;
-      margin: 20px 50% 30px 30px;
+    .lead {
+      font-size: 1.22rem;
     }
     .foto {
       border: solid 2px rgba(172, 155, 108, 0.87);
@@ -132,24 +132,23 @@ body {
   .armado {
     font-size: $titleFontSize;
     text-align: center;
-    color: rgb(61, 82, 77);
     text-shadow: rgb(33, 49, 49) 0 2px;
     font-family: "Oswald", sans-serif;
-    padding-bottom: 40px;
+    padding-bottom: 20px;
     letter-spacing: 2px;
   }
 }
 
 .card {
-  border: 2px solid rgba(0, 0, 0, 0.125) !important;
+  border: 3px solid rgba(0, 0, 0, 0.144) !important;
   border-radius: 3px;
   margin: 20px auto;
   height: 280px;
-  width: 200px;
+  width: 225px;
   box-shadow: 3px -3px 5px 0px #dfe5c0;
   .card-img-top {
     height: 80px;
-    padding: 10px 55px;
+    padding: 5px 65px;
   }
 }
 
@@ -170,7 +169,6 @@ body {
     font-size: $titleFontSize;
     text-align: center;
     font-family: "Oswald", sans-serif;
-    color: rgb(3, 36, 36);
     text-shadow: rgb(255, 255, 255) 2px 2px;
     padding-top: 20px;
     letter-spacing: 2px;
@@ -289,6 +287,9 @@ body {
   background-size: cover;
   height: auto;
   width: auto;
+  @media screen and (max-width: 600px) {
+    background-image: none;
+  }
   .contacto1 {
     font-size: $titleFontSize;
     text-align: center;

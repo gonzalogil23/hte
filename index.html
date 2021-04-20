@@ -7,15 +7,15 @@
     <meta name="description"
         content="Nuestra cocina es a base de productos sin tacc de alta calidad. Adaptamos nuestra carta a cualquier tipo de evento y a cualquier presupiuesto. ¡Llamanos!">
     <meta name="keywords"
-        content="Food Truck, sin tacc, gluten free, finger food, eventos, shows, comida, feria masticar, recetas sin gluten, catering">
+        content="Food Truck, sin tacc, gluten free, finger food, eventos, shows, comida, feria masticar, recetas sin gluten, catering, bar para celiacos, celiaca">
 
-    <title>The Gluten Freak | FoodTruck gluten free.</title>
+    <title>The Gluten Freak | FoodTruck.</title>
     <link rel="shortcut icon" href="images/favicon-16x16.png" type="image/x-icon">
 
     <meta property="og:type" content="website">
     <meta property="og:title" content="The Gluten Freak | Food Truck gluten free">
     <meta property="og:description" content="Food Truck a base de productos sin TACC de alta calidad.">
-    <meta property="og:image" content="../images/logoNegro.png">
+    <meta property="og:image" content="./images/logoNegro.png">
     <meta property="og:site_name" content="THE GLUTEN FREAK">
 
     <link rel="stylesheet" href="css/style.css">
@@ -36,8 +36,8 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
 <body>
+    <!-- Encabezado con Bootstrap, fijado al margen superior de la página -->
     <header class="header fixed-top container-fluid">
-
         <nav class="navbar navbar-expand-lg navbar-dark" style="padding: 0 !important;">
             <div class="container-fluid">
                 <a class="navbar-brand titulo" href="#Nosotros">THE GLUTEN FREAK</a>
@@ -56,54 +56,48 @@
                 </div>
             </div>
         </nav>
-
     </header>
 
     <main class="col-12 col-sm-12 col-md-12">
+        <!-- imagen inicial. logo con un background image -->
         <section id="Inicio" class="Home container-fluid">
-            <img src="images/logoNegro.png" alt="logo" class="imagenLogo animate__animated animate__fadeIn">
-
+            <img src="images/logoNegro.png" alt="logo grande" class="imagenLogo animate__animated animate__fadeIn">
         </section>
 
-
+        <!-- introducción contando de que se trata el emprendimiento -->
         <section id="Nosotros" class="Nosotros1 container">
-            
-        <div class="historia">
-            <div class="row featurette col-12 mt-3">
-                <div class="col-md-7">
-                    <h1 class="featurette-heading aboutUs">FOOD TRUCK GLUTEN FREE</h1>
-                    <p class="lead">The Gluten Freak nacio en el año 2019 con la idea de llevar una propuesta
-                        gastronomica
-                        inclusiva a eventos brindando platos y recetas libre de gluten.</p>
+            <div class="historia">
+                <div class="row featurette col-12 mt-3">
+                    <div class="col-md-7">
+                        <h1 class="featurette-heading aboutUs">FOOD TRUCK GLUTEN FREE</h1>
+                        <p class="lead">The Gluten Freak nació en el año 2019 con la idea de llevar una propuesta
+                            gastronómica
+                            inclusiva a eventos brindando platos y recetas libre de gluten.</p>
+                    </div>
+                    <div class="col-md-5">
+                        <img src="./images/FoodTruckFrente.jpg" alt="food truck visto de frente"
+                            class="featurette-image img-fluid mx-auto foto" width="400" height="400">
+                    </div>
                 </div>
-                <div class="col-md-5">
-
-                    <img src="./images/FoodTruckFrente.jpg" alt="" class="featurette-image img-fluid mx-auto foto" width="400"
-                        height="400">
-
-                </div>
-            </div>
-
-            <div class="row featurette col-12 mt-3">
-                <div class="col-md-7 order-md-2">
-                    <p class="lead">Hemos recorrido con nuestro truck muchos lugares a lo largo de la provincia de
-                        Córdoba
-                        brindando un servicio gastronómico de alta calidad a traves de nuestra cocina donde todo es
-                        artesanal, utilizando los mejores productos. Comprometidos a usar todo con sello sin tacc y
-                        evitando
-                        la contaminación cruzada.</p>
-                </div>
-                <div class="col-md-5 order-md-1">
-                    <img src="./images/FoodTruckCostado.jpg" alt="" class="featurette-image img-fluid mx-auto foto" width="400"
-                        height="400" style="margin-top: 20px !important;">
-
+                <hr>
+                <div class="row featurette col-12 mt-3">
+                    <div class="col-md-7 order-md-2">
+                        <p class="lead">Hemos recorrido con nuestro truck muchos lugares a lo largo de la provincia de
+                            Córdoba
+                            brindando un servicio gastronómico de alta calidad a traves de nuestra cocina donde todo es
+                            artesanal, utilizando los mejores productos. Comprometidos a usar todo con sello sin tacc y
+                            evitando
+                            la contaminación cruzada.</p>
+                    </div>
+                    <div class="col-md-5 order-md-1">
+                        <img src="./images/FoodTruckCostado.jpg" alt="food truck visto de costado"
+                            class="featurette-image img-fluid mx-auto foto" width="400" height="400">
+                    </div>
                 </div>
             </div>
-        </div>
-
         </section>
 
-
+        <!-- forma de trabajar. bootstrap -->
         <section class="armadoEvento container">
             <h2 class="armado animate__animated animate__fadeIn">ARMAMOS EL EVENTO JUNTO A VOS</h2>
             <div class="row row-cols-1 row-cols-md-3 g-4 d-flex justify-content-evenly">
@@ -139,16 +133,17 @@
             </div>
         </section>
 
+        <!-- enlace a la carta. abre una pagina aparte -->
         <section class="carta container">
             <div class="enlaceCarta">
                 <p>Te presentamos algunos de nuestros productos.</p>
-                ¡Accede a nuestra carta haciendo click en la imagen!
+                ¡Accedé a nuestra carta haciendo click en la imagen!
             </div>
             <a href="carta.html" target="_blank"><img src="images/images-carta/MixBrusquetas3.jpg"
-                    alt="Brusquetas saladas / Enlace de la carta" class="accesoCarta"></a>
-
+                    alt="Brusquetas / Enlace de la carta" class="accesoCarta"></a>
         </section>
 
+        <!-- tipos de servicios. seccion con bg-image -->
         <section id="Servicios" class="servicios1 container-fluid">
             <h2 class="tituloServicios animate__animated animate__fadeIn">SERVICIOS CON LOS QUE CONTAMOS</h2>
             <div class="events container">
@@ -175,9 +170,9 @@
                     </ul>
                 </div>
             </div>
-
         </section>
 
+        <!-- contacto a traves de formulario -->
         <section id="Contacto" class="contact container-fluid">
             <h2 class="contacto1 animate__animated animate__fadeIn">CONTACTO</h2>
             <form action="" method="post" class="formulario">
@@ -209,11 +204,13 @@
             </div>
         </section>
 
+        <!-- enlace a whats app con position fixed -->
         <a href="https://web.whatsapp.com/"><img src="images/socialMedia/whatsapp1.png" alt="logo whatsapp"
                 class="whatsapp"></a>
 
     </main>
 
+    <!-- footer con enlace a redes sociales y a las secciones del sitio -->
     <footer class="footer container">
         <div>
             <a href="#Inicio"><img src="images/logoNegro.png" alt="logo the gluten freak"

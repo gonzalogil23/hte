@@ -7,7 +7,7 @@
 body {
   background-color: #f3f7f7;
   color: #3d524d;
-  font-size: 20px;
+  font-size: 18px;
   font-family: "Roboto", sans-serif;
 }
 
@@ -21,24 +21,6 @@ body {
 
 .header {
   background-color: rgba(0, 0, 0, 0.705);
-}
-
-.Home {
-  text-align: center;
-  color: #141414;
-  background-image: url(../images/vegetables.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-  height: 100vh;
-  z-index: -3;
-}
-@media screen and (max-width: 600px) {
-  .Home {
-    height: 330px;
-    background-attachment: unset;
-  }
 }
 
 .titulo {
@@ -55,21 +37,6 @@ body {
 @media screen and (max-width: 400px) {
   .navbar-brand {
     font-size: 1.25rem;
-  }
-}
-
-.imagenLogo {
-  max-height: auto;
-  max-width: 50%;
-  position: relative;
-  top: 30px;
-  padding: 50px 20px;
-}
-@media screen and (max-width: 600px) {
-  .imagenLogo {
-    max-width: 52%;
-    top: 76px;
-    padding: 0;
   }
 }
 
@@ -94,6 +61,39 @@ body {
   text-shadow: none;
 }
 
+.Home {
+  text-align: center;
+  color: #141414;
+  background-image: url(../images/vegetables.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  height: 100vh;
+  z-index: -3;
+}
+@media screen and (max-width: 600px) {
+  .Home {
+    height: 330px;
+    background-attachment: unset;
+  }
+}
+
+.imagenLogo {
+  max-height: auto;
+  max-width: 50%;
+  position: relative;
+  top: 15px;
+  padding: 50px 20px;
+}
+@media screen and (max-width: 600px) {
+  .imagenLogo {
+    max-width: 52%;
+    top: 76px;
+    padding: 0;
+  }
+}
+
 .Nosotros1 {
   margin-top: 20px;
 }
@@ -101,10 +101,8 @@ body {
   padding: 20px auto;
   margin-left: 10px;
 }
-.Nosotros1 .historia .parrafo-1,
-.Nosotros1 .historia .parrafo-2 {
-  text-align: left;
-  margin: 20px 50% 30px 30px;
+.Nosotros1 .historia .lead {
+  font-size: 1.22rem;
 }
 .Nosotros1 .historia .foto {
   border: solid 2px rgba(172, 155, 108, 0.87);
@@ -132,24 +130,23 @@ body {
 .armadoEvento .armado {
   font-size: 2.5em;
   text-align: center;
-  color: #3d524d;
   text-shadow: #213131 0 2px;
   font-family: "Oswald", sans-serif;
-  padding-bottom: 40px;
+  padding-bottom: 20px;
   letter-spacing: 2px;
 }
 
 .card {
-  border: 2px solid rgba(0, 0, 0, 0.125) !important;
+  border: 3px solid rgba(0, 0, 0, 0.144) !important;
   border-radius: 3px;
   margin: 20px auto;
   height: 280px;
-  width: 200px;
+  width: 225px;
   box-shadow: 3px -3px 5px 0px #dfe5c0;
 }
 .card .card-img-top {
   height: 80px;
-  padding: 10px 55px;
+  padding: 5px 65px;
 }
 
 .servicios1 {
@@ -174,7 +171,6 @@ body {
   font-size: 2.5em;
   text-align: center;
   font-family: "Oswald", sans-serif;
-  color: #032424;
   text-shadow: white 2px 2px;
   padding-top: 20px;
   letter-spacing: 2px;
@@ -309,6 +305,11 @@ body {
   background-size: cover;
   height: auto;
   width: auto;
+}
+@media screen and (max-width: 600px) {
+  .contact {
+    background-image: none;
+  }
 }
 .contact .contacto1 {
   font-size: 2.5em;
