@@ -89,7 +89,7 @@ body {
   max-height: auto;
   max-width: 50%;
   position: relative;
-  top: 15px;
+  top: 0px;
   padding: 50px 20px;
   @media screen and (max-width: 600px) {
     max-width: 52%;
@@ -445,16 +445,15 @@ body {
   font-family: "Roboto", sans-serif;
   padding: 20px;
   display: flex;
+  flex-direction: column;
   justify-content: center;
 }
 
 .carousel-inner {
-  position: relative;
-  left: 280px;
+  margin: 0 auto;
   width: 800px !important;
-  @media screen and (max-width: 600px) {
-    left: 0;
-    width: 100% !important;
+  @media screen and (max-width:767px) {
+    width: unset !important;
   }
   h5 {
     color: rgb(1, 5, 5);
@@ -467,13 +466,13 @@ body {
 
 .carousel-control-prev {
   left: 200px !important;
-  @media screen and (max-width: 600px){
+  @media screen and (max-width: 767px){
     left: unset !important;
   }
 }
 .carousel-control-next {
   right: 190px !important;
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 767px) {
     right: 0 !important;
   }
 }
